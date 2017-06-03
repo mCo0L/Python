@@ -16,13 +16,13 @@ for i in range(a):
             img[i][j] = 0
 
 
+img = cv2.GaussianBlur(img, (5,5), 0)
+
 cv2.imshow("Converted image",img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 
 
-
-img = cv2.GaussianBlur(img, (5,5), 0)
 maxValue = 255
 adaptiveMethod = cv2.ADAPTIVE_THRESH_GAUSSIAN_C
 thresholdType = cv2.THRESH_BINARY
