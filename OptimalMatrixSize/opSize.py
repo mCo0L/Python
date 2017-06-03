@@ -1,6 +1,6 @@
 import math
 
-print("Enter number of variables: ")
+print("Enter number of variables in matrix: ")
 n = int(input())
 
 a = int(math.sqrt(n))+1
