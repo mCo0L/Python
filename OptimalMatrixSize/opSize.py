@@ -7,7 +7,7 @@ a = int(math.sqrt(n))+1
 while(a >= 1):
     if(n%a==0):
         b = n//a
-        print("Optimal Matrix Size is: ",a," X ",b)
+        print("Optimal Matrix Dimensions are: ",a," X ",b)
         break
     else:
         a -= 1
