@@ -31,4 +31,4 @@ C = -3
 im_thresholded = cv2.adaptiveThreshold(img, maxValue, adaptiveMethod, thresholdType, blockSize, C) 
 labelarray, particle_count = ndimage.measurements.label(im_thresholded)
 
-print(particle_count)
+print("Total Stars in image: ",particle_count)
